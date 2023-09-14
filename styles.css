@@ -1,9 +1,11 @@
+/* Reset de Margens e Preenchimentos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo do Corpo da Página */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -13,10 +15,12 @@ body {
   min-height: 100vh;
 }
 
+/* Estilo de Texto em Destaque */
 span {
   color: #008DCF;
 }
 
+/* Estilo do Contêiner Principal */
 .container {
   min-width: 400px;
   min-height: 150px;
@@ -30,15 +34,18 @@ span {
   text-align: center;
 }
 
-.content{
+/* Estilo do Conteúdo Flexível */
+.content {
   display: flex;
   justify-content: space-between;
 }
 
+/* Estilo da Lista de Diretórios */
 .directory-list>span {
   margin-left: 17px;
 }
 
+/* Estilo da Árvore de Diretórios */
 .directory-tree {
   margin-top: 5px;
 }
@@ -78,6 +85,7 @@ span {
   height: 8px;
 }
 
+/* Estilo dos Botões de Adicionar e Remover */
 .directory-tree .add-child:before {
   content: "+";
   position: absolute;
@@ -98,6 +106,7 @@ span {
   font-weight: bold;
 }
 
+/* Estilo do Botão "Adicionar" */
 #addItem {
   padding: 5px 10px;
   background-color: #008DCF;
@@ -111,6 +120,7 @@ span {
   background-color: #008DCF;
 }
 
+/* Estilo do Modal de Adicionar Filho */
 #addChildModal {
   display: none;
 }
@@ -132,7 +142,6 @@ span {
 #addChildModal .modal-content {
   background-color: #fff;
   border-radius: 10px;
-  position: relative;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -146,6 +155,7 @@ span {
   background-color: #007BBB;
 }
 
+/* Estilo do Modal */
 .modal {
   display: none;
   position: fixed;
@@ -155,13 +165,15 @@ span {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-form{
+/* Estilo do Formulário no Modal */
+.modal-form {
   margin-top: 30px;
 }
 
+/* Estilo do Botão Fechar no Modal */
 .close {
   color: #aaaaaa;
   position: absolute;
@@ -176,6 +188,7 @@ span {
   color: #000;
 }
 
+/* Estilo da Entrada de Texto */
 .input {
   padding: 5px;
   width: 60%;
